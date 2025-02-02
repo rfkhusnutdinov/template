@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="calculator app__calculator">
+        <div class="calculator__output"></div>
+        <div class="calculator__input"></div>
+        <div class="calculator__buttons">
+          <button data-js-calc-value="7" class="calculator__button">7</button>
+          <button data-js-calc-value="8" class="calculator__button">8</button>
+          <button data-js-calc-value="9" class="calculator__button">9</button>
+          <button data-js-calc-value="/" class="calculator__button calculator__button--operation">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="4.5" r="1" fill="currentColor" />
+              <path
+                d="M2 8C2 7.72386 2.22386 7.5 2.5 7.5H13.5C13.7761 7.5 14 7.72386 14 8C14 8.27614 13.7761 8.5 13.5 8.5H2.5C2.22386 8.5 2 8.27614 2 8Z"
+                fill="currentColor"
+              />
+              <circle cx="8" cy="11.5" r="1" fill="currentColor" />
+            </svg>
+          </button>
+          <button data-js-calc-value="4" class="calculator__button">4</button>
+          <button data-js-calc-value="5" class="calculator__button">5</button>
+          <button data-js-calc-value="6" class="calculator__button">6</button>
+          <button data-js-calc-value="*" class="calculator__button calculator__button--operation">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.08859 2.21569L2.14645 2.14645C2.32001 1.97288 2.58944 1.9536 2.78431 2.08859L2.85355 2.14645L6 5.293L9.14645 2.14645C9.34171 1.95118 9.65829 1.95118 9.85355 2.14645C10.0488 2.34171 10.0488 2.65829 9.85355 2.85355L6.707 6L9.85355 9.14645C10.0271 9.32001 10.0464 9.58944 9.91141 9.78431L9.85355 9.85355C9.67999 10.0271 9.41056 10.0464 9.21569 9.91141L9.14645 9.85355L6 6.707L2.85355 9.85355C2.65829 10.0488 2.34171 10.0488 2.14645 9.85355C1.95118 9.65829 1.95118 9.34171 2.14645 9.14645L5.293 6L2.14645 2.85355C1.97288 2.67999 1.9536 2.41056 2.08859 2.21569L2.14645 2.14645L2.08859 2.21569Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button data-js-calc-value="1" class="calculator__button">1</button>
+          <button data-js-calc-value="2" class="calculator__button">2</button>
+          <button data-js-calc-value="3" class="calculator__button">3</button>
+          <button data-js-calc-value="-" class="calculator__button calculator__button--operation">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2 7.5C2 7.22386 2.22386 7 2.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H2.5C2.22386 8 2 7.77614 2 7.5Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button data-js-calc-value="=" class="calculator__button calculator__button--result">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2 6C2 5.72386 2.22386 5.5 2.5 5.5H13.5C13.7761 5.5 14 5.72386 14 6C14 6.27614 13.7761 6.5 13.5 6.5H2.5C2.22386 6.5 2 6.27614 2 6Z"
+                fill="currentColor"
+              />
+              <path
+                d="M2 10C2 9.72386 2.22386 9.5 2.5 9.5H13.5C13.7761 9.5 14 9.72386 14 10C14 10.2761 13.7761 10.5 13.5 10.5H2.5C2.22386 10.5 2 10.2761 2 10Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button data-js-calc-value="0" class="calculator__button">0</button>
+          <button data-js-calc-value="remove" class="calculator__button">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.00154 3C5.47129 3 4.96273 3.21057 4.58769 3.58542L1.58615 6.58542C0.804618 7.36655 0.804616 8.63344 1.58615 9.41458L4.58769 12.4146C4.96273 12.7894 5.47128 13 6.00154 13H12C13.1045 13 14 12.1046 14 11V5C14 3.89543 13.1045 3 12 3H6.00154ZM5.29462 4.29271C5.48214 4.10529 5.73641 4 6.00154 4H12C12.5522 4 13 4.44772 13 5V11C13 11.5523 12.5522 12 12 12H6.00154C5.73641 12 5.48214 11.8947 5.29461 11.7073L2.29307 8.70729C1.90231 8.31672 1.90231 7.68328 2.29308 7.29271L5.29462 4.29271ZM7.35355 5.64645C7.15829 5.45118 6.84171 5.45118 6.64645 5.64645C6.45118 5.84171 6.45118 6.15829 6.64645 6.35355L8.29289 8L6.64645 9.64645C6.45118 9.84171 6.45118 10.1583 6.64645 10.3536C6.84171 10.5488 7.15829 10.5488 7.35355 10.3536L9 8.70711L10.6464 10.3536C10.8417 10.5488 11.1583 10.5488 11.3536 10.3536C11.5488 10.1583 11.5488 9.84171 11.3536 9.64645L9.70711 8L11.3536 6.35355C11.5488 6.15829 11.5488 5.84171 11.3536 5.64645C11.1583 5.45118 10.8417 5.45118 10.6464 5.64645L9 7.29289L7.35355 5.64645Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button data-js-calc-value="+" class="calculator__button calculator__button--operation">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.5 2C6.5 1.72386 6.27614 1.5 6 1.5C5.72386 1.5 5.5 1.72386 5.5 2V5.5H2C1.72386 5.5 1.5 5.72386 1.5 6C1.5 6.27614 1.72386 6.5 2 6.5H5.5V10C5.5 10.2761 5.72386 10.5 6 10.5C6.27614 10.5 6.5 10.2761 6.5 10V6.5H10C10.2761 6.5 10.5 6.27614 10.5 6C10.5 5.72386 10.2761 5.5 10 5.5H6.5V2Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js" type="module" />
+  </body>
+</html>
