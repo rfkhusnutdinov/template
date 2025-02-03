@@ -1,7 +1,16 @@
 import { readdirSync, unlink } from "fs";
 import path from "path";
 
-async function deleteAllFilesInDir(dirPath) {
+export const isProd = function () {
+  const argv = process.argv.slice(2).map((v) => v.toLowerCase());
+  return argv.includes("--prod");
+};
+
+export const getFilenameWithoutExt = function (path) {
+  return path.split(".")[0];
+};
+
+export async function deleteAllFilesInDir(dirPath) {
   try {
     const files = readdirSync(dirPath);
 
@@ -12,5 +21,3 @@ async function deleteAllFilesInDir(dirPath) {
     console.log(err);
   }
 }
-
-Promise.all([deleteAllFilesInDir("dist/css"), deleteAllFilesInDir("dist/js")]);

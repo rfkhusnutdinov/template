@@ -1,7 +1,7 @@
 import chokidar from "chokidar";
 
-import { buildAllScripts } from "./build-scripts.js";
-import { buildAllStyles } from "./build-styles.js";
+import { buildAllScripts } from "./build-scripts.mjs";
+import { buildAllStyles } from "./build-styles.mjs";
 
 chokidar.watch("src/js").on("change", async () => {
   console.log("Building scripts...");
