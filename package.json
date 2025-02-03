@@ -1,15 +1,15 @@
 {
-  "name": "base-starter-js",
+  "name": "template",
   "version": "1.0.0",
-  "description": "Template for JavaScript projects",
+  "description": "Шаблон для JavaScript проектов",
   "author": "Rinat Khusnutdinov <rfkhusnutdinov@yandex.ru>",
-  "homepage": "https://github.com/rfkhusnutdinov/base-starter-js#readme",
+  "homepage": "https://github.com/rfkhusnutdinov/template#readme",
   "bugs": {
-    "url": "https://github.com/rfkhusnutdinov/base-starter-js/issues"
+    "url": "https://github.com/rfkhusnutdinov/template/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rfkhusnutdinov/base-starter-js.git"
+    "url": "https://github.com/rfkhusnutdinov/template.git"
   },
   "keywords": [
     "starter",
